@@ -1,0 +1,15 @@
+# Robots.txt for KWS Technology
+# https://kws.technology
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://kws.technology/sitemap.xml
+
+# Crawl-delay for polite bots (optional)
+Crawl-delay: 1
+
+# Disallow admin/internal paths if any exist in future
+# Disallow: /admin/
+# Disallow: /api/
