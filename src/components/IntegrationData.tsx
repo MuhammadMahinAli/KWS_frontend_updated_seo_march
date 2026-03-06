@@ -34,7 +34,7 @@ export function IntegrationData() {
         {/* Header */}
         <div className="flex flex-col items-center mb-16">
           <h2 className="font-['Inter'] font-semibold text-[#121212] text-[30px] text-center tracking-[-0.75px] leading-[36px]">
-            From idea to production—fast.
+            Custom AI Agent Development: Discovery to Deployment
           </h2>
         </div>
 

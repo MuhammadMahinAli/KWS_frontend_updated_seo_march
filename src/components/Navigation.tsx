@@ -46,7 +46,7 @@ export function Navigation() {
         <div className="max-w-[1280px] mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             <a href="/" className="font-semibold text-lg tracking-tight text-[#121212]">
-              KWS
+              KWS Technology
             </a>
 
             {/* Desktop Navigation */}

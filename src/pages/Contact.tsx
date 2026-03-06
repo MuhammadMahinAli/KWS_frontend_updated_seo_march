@@ -98,7 +98,7 @@ export function Contact() {
             </div>
 
             {/* Meta Links */}
-            <div className="flex flex-wrap gap-2 items-center justify-center text-[10px] md:text-[11px] font-['Inter'] font-medium text-[#a8a29e] uppercase tracking-wider">
+            <div className="flex flex-wrap gap-2 items-center justify-center text-[10px] md:text-[11px] font-['Inter'] font-medium text-[#595959] uppercase tracking-wider">
               <span>AI AGENTS</span>
               <span>•</span>
               <span>AUTOMATION</span>
@@ -288,7 +288,7 @@ export function Contact() {
                   </button>
 
                   {/* Footer Text */}
-                  <p className="text-center font-['Inter'] text-[11px] text-zinc-400 leading-[1.6]">
+                  <p className="text-center font-['Inter'] text-[11px] text-zinc-600 leading-[1.6]">
                     We'll only use your details to respond to your request.
                   </p>
                 </form>

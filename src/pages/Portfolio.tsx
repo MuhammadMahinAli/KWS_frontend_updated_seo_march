@@ -150,8 +150,11 @@ export function Portfolio() {
               <div className="bg-[#f5f5f5] h-[200px] md:h-[256px] rounded-[20px] relative overflow-hidden">
                 <img
                   src={imgKWSAppointment}
-                  alt="KWS Smart Appointment System"
+                  alt="KWS Smart Appointment System — AI booking agent and clinic management platform by KWS Technology"
                   className="absolute inset-0 w-full h-full object-cover opacity-80"
+                  fetchpriority="high"
+                  width={600}
+                  height={256}
                 />
                 <div className="absolute bottom-4 left-4 backdrop-blur-[2px] bg-[rgba(255,255,255,0.9)] border border-[rgba(0,0,0,0.05)] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] rounded-lg p-[13px]">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 20 20">
@@ -201,8 +204,11 @@ export function Portfolio() {
               <div className="bg-[#f5f5f5] h-[200px] md:h-[256px] rounded-[20px] relative overflow-hidden">
                 <img
                   src={imgResearchBuddy}
-                  alt="ResearchBuddy"
+                  alt="ResearchBuddy — AI-powered research and project management collaboration platform by KWS Technology"
                   className="absolute inset-0 w-full h-full object-cover opacity-80"
+                  loading="lazy"
+                  width={600}
+                  height={256}
                 />
                 <div className="absolute bottom-4 left-4 backdrop-blur-[2px] bg-[rgba(255,255,255,0.9)] border border-[rgba(0,0,0,0.05)] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] rounded-lg p-[13px]">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 20 20">
@@ -261,8 +267,11 @@ export function Portfolio() {
               <div className="bg-[#fafafa] h-[192px] rounded-[16px] mb-5 overflow-hidden">
                 <img
                   src={imgNFTCloset}
-                  alt="NFT ClosetX"
+                  alt="NFT ClosetX — Web3 fashion marketplace with AR/VR assets and digital-to-physical product claims by KWS Technology"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  width={384}
+                  height={192}
                 />
               </div>
 
@@ -305,8 +314,11 @@ export function Portfolio() {
               <div className="bg-[#fafafa] h-[192px] rounded-[16px] mb-5 overflow-hidden">
                 <img
                   src={imgDataM}
-                  alt="DataM"
+                  alt="DataM — AI business mentor platform for founders with strategic insights and decision support by KWS Technology"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  width={384}
+                  height={192}
                 />
               </div>
 
@@ -349,8 +361,11 @@ export function Portfolio() {
               <div className="bg-[#fafafa] h-[192px] rounded-[16px] mb-5 overflow-hidden">
                 <img
                   src={imgSHY}
-                  alt="SHY"
+                  alt="SHY — AI agent for youth sexual wellness education, safe guidance and supportive conversations by KWS Technology"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  width={384}
+                  height={192}
                 />
               </div>
 
@@ -393,8 +408,11 @@ export function Portfolio() {
               <div className="bg-[#fafafa] h-[192px] rounded-[16px] mb-5 overflow-hidden">
                 <img
                   src={imgPinata}
-                  alt="Pinata Themes"
+                  alt="Pinata Themes — multi-design web theme and template platform for fast product launches by KWS Technology"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  width={384}
+                  height={192}
                 />
               </div>
 
@@ -441,8 +459,11 @@ export function Portfolio() {
               <div className="bg-[#fafafa] h-[192px] rounded-[16px] mb-5 overflow-hidden">
                 <img
                   src={imgPongoo}
-                  alt="Pongoo"
+                  alt="Pongoo — AI-assisted wheelchair controller mobile app with accessible UX design by KWS Technology"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  width={384}
+                  height={192}
                 />
               </div>
 

@@ -6,6 +6,7 @@ import { BookingAgent } from './components/BookingAgent';
 import { IntegrationData } from './components/IntegrationData';
 import { InteractiveDemo } from './components/InteractiveDemo';
 import { FAQ } from './components/FAQ';
+import { WhatIsAIAgent } from './components/WhatIsAIAgent';
 import { SelectedWork } from './components/SelectedWork';
 import { MoreFromKWS } from './components/MoreFromKWS';
 import { CTASection } from './components/CTASection';
@@ -206,6 +207,7 @@ export default function App() {
         <InteractiveDemo />
         <MoreFromKWS />
         <SelectedWork />
+        <WhatIsAIAgent />
         <FAQ />
         <CTASection />
       </main>

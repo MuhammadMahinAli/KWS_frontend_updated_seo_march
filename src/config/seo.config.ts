@@ -4,7 +4,7 @@
  */
 
 // Get site URL from environment or use default
-const SITE_URL = import.meta.env.VITE_SITE_URL || 'https://kws.technology';
+const SITE_URL = import.meta.env.VITE_SITE_URL || 'https://www.kws.technology';
 
 // Check if we're in production
 const isProduction = import.meta.env.PROD;

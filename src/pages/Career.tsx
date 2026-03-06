@@ -344,7 +344,7 @@ export function Career() {
       <section className="relative px-6 md:px-20 pt-[120px] pb-16">
         <div className="max-w-[800px] mx-auto flex flex-col items-center text-center">
           <h1 className="font-['Inter'] font-bold text-[#18181b] text-[40px] md:text-[52px] tracking-[-1.5px] md:tracking-[-2px] leading-[44px] md:leading-[56px] mb-5">
-            Careers at KWS
+            Careers at KWS Technology
           </h1>
 
           <p className="font-['Inter'] font-normal text-[#71717a] text-[15px] md:text-[17px] leading-[24px] md:leading-[26px] max-w-[520px] mb-10">

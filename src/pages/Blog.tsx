@@ -182,6 +182,9 @@ export function Blog() {
                   alt="Featured article" 
                   className="w-full h-full object-cover opacity-95"
                   style={{ objectPosition: 'left' }}
+                  fetchpriority="high"
+                  width={896}
+                  height={256}
                 />
               </div>
 
@@ -262,6 +265,9 @@ export function Blog() {
                       alt={article.title}
                       className="w-full h-full object-cover"
                       style={{ objectPosition: 'left' }}
+                      loading="lazy"
+                      width={448}
+                      height={257}
                     />
                   </div>
 

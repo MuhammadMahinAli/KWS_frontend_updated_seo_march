@@ -3,6 +3,8 @@
  * Generates schema.org structured data per route
  */
 
+import { FAQ_ITEMS } from '../data/faq';
+
 const SITE_URL = import.meta.env.VITE_SITE_URL || 'https://www.kws.technology';
 
 // Organization schema - used site-wide
@@ -18,7 +20,7 @@ export const organizationSchema = {
     addressLocality: 'Kuala Lumpur',
     addressCountry: 'MY',
   },
-  sameAs: ['https://www.linkedin.com/company/kws-technology'],
+  sameAs: ['https://www.linkedin.com/company/kwstechnology'],
   contactPoint: [
     {
       '@type': 'ContactPoint',
@@ -191,6 +193,18 @@ export function getSchemaForRoute(path: string): object[] {
           url: `${SITE_URL}/`,
         },
         serviceSchema,
+        {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: FAQ_ITEMS.map((item) => ({
+            '@type': 'Question',
+            name: item.question,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: item.answer,
+            },
+          })),
+        },
       ];
 
     case '/products':
@@ -305,8 +319,8 @@ export function getSchemaForRoute(path: string): object[] {
             '@type': 'Place',
             address: {
               '@type': 'PostalAddress',
-              addressLocality: job.location === 'Remote' ? undefined : job.location,
-              addressCountry: 'US',
+              addressLocality: job.location === 'Remote' ? undefined : 'Kuala Lumpur',
+              addressCountry: job.location === 'Remote' ? 'US' : 'MY',
             },
           },
           jobLocationType: job.location === 'Remote' ? 'TELECOMMUTE' : undefined,

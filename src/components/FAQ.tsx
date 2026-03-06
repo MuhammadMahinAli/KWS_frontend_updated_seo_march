@@ -1,55 +1,11 @@
 import { Plus } from 'lucide-react';
 import { useState } from 'react';
+import { FAQ_ITEMS } from '../data/faq';
 
 export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const faqs = [
-    {
-      question: 'What is an AI Agent, and how is it different from a chatbot?',
-      answer: 'An AI agent can take actions—not just answer questions. It can book appointments, qualify leads, update CRMs, trigger workflows, send follow-ups, and generate reports automatically.',
-    },
-    {
-      question: 'What can KWS AI Agents do for my business?',
-      answer: 'We build agents for lead generation, appointment booking, customer support, CRM automation, internal team assistants, project/task automation, and data-to-report workflows—customized for your industry.',
-    },
-    {
-      question: 'Can your AI agent book appointments and handle reschedules/cancellations?',
-      answer: 'Yes. Our booking agents can schedule, reschedule, cancel, confirm, send reminders, and collect details (services, preferred time, location, concerns) — 24/7.',
-    },
-    {
-      question: 'Will the AI agent integrate with my current tools (WhatsApp, website, CRM, Google Calendar)?',
-      answer: 'Yes. We can integrate with common tools like WhatsApp, website chat, email, Google Calendar, CRMs, and automation platforms so the agent works inside your existing workflow.',
-    },
-    {
-      question: 'Is my customer data safe with an AI agent?',
-      answer: 'We design agents with privacy-first architecture, role-based access, audit trails, and secure storage practices. You control what data is collected, stored, and who can access it.',
-    },
-    {
-      question: 'Can I customize the AI agent\'s tone and behavior for my brand?',
-      answer: 'Absolutely. We match your brand voice (professional, friendly, luxury, clinical, etc.) and set rules like escalation to humans, allowed responses, and how it handles sensitive topics.',
-    },
-    {
-      question: 'How long does it take to launch an AI agent with KWS?',
-      answer: 'Timelines vary by complexity, but most MVP agents can be launched fast, then improved iteratively with better flows, knowledge-base upgrades (RAG), and deeper integrations.',
-    },
-    {
-      question: 'Does KWS build NFT or blockchain-based platforms for real businesses?',
-      answer: 'Yes. We build blockchain solutions for real use cases like digital ownership, tokenized products, membership access, verification, and marketplaces—not just hype.',
-    },
-    {
-      question: 'Can you connect NFTs to physical products (claim, resale, authenticity)?',
-      answer: 'Yes. We can enable NFT-to-physical linking, product claiming, authenticity verification, metadata updates, and resale logic—useful for fashion, collectibles, and brand drops.',
-    },
-    {
-      question: 'Do you build AR experiences like try-ons or product previews?',
-      answer: 'Yes. We create AR product demos, virtual try-ons, interactive 3D previews, and branded experiences that work on mobile/web depending on your needs.',
-    },
-    {
-      question: 'Can you build VR training, walkthroughs, or virtual showrooms?',
-      answer: 'Yes. We build VR solutions like training modules, virtual walkthroughs, showrooms, and immersive product experiences—ideal for education, clinics, real estate, and retail.',
-    },
-  ];
+  const faqs = FAQ_ITEMS;
 
   return (
     <section className="py-12 px-6 md:px-12 lg:px-24 xl:px-[341px]">
@@ -58,7 +14,7 @@ export function FAQ() {
         <div className="md:hidden mb-6">
           <div className="flex gap-3 items-center w-full">
             <h2 className="font-medium text-[18px] text-[#1c1917] tracking-[-0.5px] leading-[28px]">
-              FAQ
+              Frequently Asked Questions About AI Agent Development
             </h2>
             <div className="flex-1 h-px bg-[#dadada]" />
           </div>
@@ -67,7 +23,7 @@ export function FAQ() {
         {/* Desktop: Full FAQ heading */}
         <div className="hidden md:block text-center mb-3">
           <h2 className="font-medium text-[60px] text-black leading-[75px] mb-2">
-            Frequently Asked Questions
+            Frequently Asked Questions About AI Agent Development
           </h2>
         </div>
 

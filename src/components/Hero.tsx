@@ -25,10 +25,11 @@ export function Hero() {
         <div className="max-w-[1280px] mx-auto md:px-6">
           {/* Hero Heading Container */}
           <div className="flex flex-col items-center max-w-[768px] mx-auto mb-8 md:mb-12">
-            <h1 className="font-semibold text-[48px] md:text-[76px] text-center text-[#121212] leading-[50.4px] md:leading-[79.8px] tracking-[-2.4px] md:tracking-[-3.8px] mb-6">
+            <h1 className="sr-only" style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', borderWidth: 0 }}>AI Agent Development, Business Automation &amp; Growth Consulting for Healthcare, Aesthetics, Fitness, Hospitality, Legal, HR, Real Estate, Manufacturing and SMBs</h1>
+            <p className="font-semibold text-[48px] md:text-[76px] text-center text-[#121212] leading-[50.4px] md:leading-[79.8px] tracking-[-2.4px] md:tracking-[-3.8px] mb-6">
               <span className="block md:inline">Bring AI agents </span>
               <span className="block md:inline">to life.</span>
-            </h1>
+            </p>
             <div className="max-w-full md:max-w-[672px] px-4 md:px-0">
               <p className="font-normal text-[18px] md:text-[20px] text-center text-[#6b7280] leading-[28px]">
                 KWS Technology helps founders and teams build secure, scalable AI agents and full-stack products fast, clean, and production-ready research-led engineering
@@ -63,8 +64,8 @@ export function Hero() {
 
                   <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-3 md:gap-0 pt-3 pb-3 px-1 md:px-3">
                     <div className="flex items-center gap-2">
-                      <button className="w-[30px] h-[30px] md:w-10 md:h-10 bg-[#f3f4f6] rounded-full flex items-center justify-center hover:bg-[#e5e7eb] transition-colors">
-                        <svg className="w-5 h-5" fill="none" viewBox="0 0 20 20">
+                      <button aria-label="Attach file" className="w-[30px] h-[30px] md:w-10 md:h-10 bg-[#f3f4f6] rounded-full flex items-center justify-center hover:bg-[#e5e7eb] transition-colors">
+                        <svg className="w-5 h-5" aria-hidden="true" fill="none" viewBox="0 0 20 20">
                           <path d="M4.16667 10H15.8333M10 4.16667V15.8333" stroke="#4B5563" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.66667" />
                         </svg>
                       </button>

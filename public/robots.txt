@@ -1,11 +1,11 @@
 # Robots.txt for KWS Technology
-# https://kws.technology
+# https://www.kws.technology
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://kws.technology/sitemap.xml
+Sitemap: https://www.kws.technology/sitemap.xml
 
 # Crawl-delay for polite bots (optional)
 Crawl-delay: 1

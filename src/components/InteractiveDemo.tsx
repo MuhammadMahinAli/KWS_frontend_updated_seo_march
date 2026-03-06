@@ -12,14 +12,14 @@ export function InteractiveDemo() {
           <h2 className="font-['Inter'] font-bold text-[#111] text-[30px] leading-[36px] tracking-[-0.75px] text-center">
             Interactive demo
           </h2>
-          <p className="font-['Inter'] font-normal text-[#737373] text-[16px] leading-[24px] text-center">
+          <p className="font-['Inter'] font-normal text-[#595959] text-[16px] leading-[24px] text-center">
             Select an industry, then tap a service to preview the experience.
           </p>
         </div>
 
         {/* Industry Selector */}
         <div className="flex flex-col gap-[7px] items-center max-w-[448px] mx-auto mb-10">
-          <label className="font-['Inter'] font-semibold text-[#a3a3a3] text-[12px] leading-[16px] tracking-[0.6px] uppercase w-full text-left pl-1">
+          <label className="font-['Inter'] font-semibold text-[#595959] text-[12px] leading-[16px] tracking-[0.6px] uppercase w-full text-left pl-1">
             Select an industry
           </label>
           <div className="bg-white w-full border border-[#e5e5e5] rounded-[12px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]">
@@ -48,7 +48,7 @@ export function InteractiveDemo() {
           <div className="flex flex-col gap-8 w-full lg:w-[284px]">
             {/* Scheduling Section */}
             <div className="flex flex-col gap-3">
-              <h4 className="font-['Inter'] font-bold text-[#a3a3a3] text-[12px] leading-[16px] tracking-[0.6px] uppercase pl-1">
+              <h4 className="font-['Inter'] font-bold text-[#595959] text-[12px] leading-[16px] tracking-[0.6px] uppercase pl-1">
                 Scheduling
               </h4>
               <div className="flex flex-col gap-2">
@@ -75,7 +75,7 @@ export function InteractiveDemo() {
 
             {/* AI Skincare Chatbot Section */}
             <div className="flex flex-col gap-3">
-              <h4 className="font-['Inter'] font-bold text-[#a3a3a3] text-[12px] leading-[16px] tracking-[0.6px] uppercase pl-1">
+              <h4 className="font-['Inter'] font-bold text-[#595959] text-[12px] leading-[16px] tracking-[0.6px] uppercase pl-1">
                 AI Skincare Chatbot
               </h4>
               <div className="flex flex-col gap-2">
@@ -191,7 +191,7 @@ export function InteractiveDemo() {
           <div className="flex flex-col gap-8 w-full lg:w-[284px]">
             {/* Client Engagement Section */}
             <div className="flex flex-col gap-3">
-              <h4 className="font-['Inter'] font-bold text-[#a3a3a3] text-[12px] leading-[16px] tracking-[0.6px] uppercase pl-1">
+              <h4 className="font-['Inter'] font-bold text-[#595959] text-[12px] leading-[16px] tracking-[0.6px] uppercase pl-1">
                 Client Engagement
               </h4>
               <div className="flex flex-col gap-2">
@@ -215,7 +215,7 @@ export function InteractiveDemo() {
 
             {/* CRM & Workflow Section */}
             <div className="flex flex-col gap-3">
-              <h4 className="font-['Inter'] font-bold text-[#a3a3a3] text-[12px] leading-[16px] tracking-[0.6px] uppercase pl-1">
+              <h4 className="font-['Inter'] font-bold text-[#595959] text-[12px] leading-[16px] tracking-[0.6px] uppercase pl-1">
                 CRM & Workflow
               </h4>
               <div className="flex flex-col gap-2">
@@ -239,7 +239,7 @@ export function InteractiveDemo() {
           <h3 className="font-['Inter'] font-semibold text-[#111] text-[18px] leading-[28px] mb-2">
             Services for this industry
           </h3>
-          <p className="font-['Inter'] font-normal text-[#737373] text-[14px] leading-[20px] mb-4">
+          <p className="font-['Inter'] font-normal text-[#595959] text-[14px] leading-[20px] mb-4">
             What we typically deliver for this client type.
           </p>
           <div className="flex flex-wrap gap-2">

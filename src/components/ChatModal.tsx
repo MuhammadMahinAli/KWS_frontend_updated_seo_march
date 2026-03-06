@@ -342,9 +342,10 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
           <h2 className="text-lg font-semibold text-gray-900">AI Agent Builder</h2>
           <button
             onClick={onClose}
+            aria-label="Close"
             className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors flex-shrink-0"
           >
-            <X className="w-5 h-5 text-gray-600" />
+            <X className="w-5 h-5 text-gray-600" aria-hidden="true" />
           </button>
         </div>
 
@@ -658,14 +659,17 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
             // Chat Input Box - After Form Submission
             <div className="flex items-center gap-3">
               <button
+                aria-label="Attach file"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
               >
-                <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-gray-600" aria-hidden="true" fill="none" viewBox="0 0 20 20">
                   <path d="M4.16667 10H15.8333M10 4.16667V15.8333" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.66667" />
                 </svg>
               </button>
               <div className="flex-1 relative">
+                <label htmlFor="chat-input-post" className="sr-only">Type a message</label>
                 <input
+                  id="chat-input-post"
                   type="text"
                   value={chatInput}
                   onChange={(e) => setChatInput(e.target.value)}
@@ -677,9 +681,10 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
               <button
                 onClick={handleSendMessage}
                 disabled={!chatInput.trim()}
+                aria-label="Send message"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-[#d0ef58] hover:bg-[#c0df48] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <svg className="w-5 h-5 text-gray-900" fill="none" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-gray-900" aria-hidden="true" fill="none" viewBox="0 0 20 20">
                   <path d="M18 10L2 10M18 10L12 4M18 10L12 16" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
                 </svg>
               </button>
@@ -689,9 +694,10 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
             <div className="flex items-center gap-3">
               <button
                 disabled={isGenerating}
+                aria-label="Attach file"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-gray-600" aria-hidden="true" fill="none" viewBox="0 0 20 20">
                   <path d="M4.16667 10H15.8333M10 4.16667V15.8333" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.66667" />
                 </svg>
               </button>
@@ -700,15 +706,16 @@ export function ChatModal({ isOpen, onClose, initialMessage }: ChatModalProps) {
                 className="px-4 py-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
               >
                 <span className="text-sm font-medium text-gray-700">Agent Templates</span>
-                <svg className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 16 16">
+                <svg className="w-4 h-4 text-gray-600" aria-hidden="true" fill="none" viewBox="0 0 16 16">
                   <path d="M4 6L8 10L12 6" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" />
                 </svg>
               </button>
               <button
                 disabled={isGenerating}
+                aria-label="Voice input"
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                <Mic className="w-5 h-5 text-gray-600" />
+                <Mic className="w-5 h-5 text-gray-600" aria-hidden="true" />
               </button>
               <div className="flex-1" />
               <button

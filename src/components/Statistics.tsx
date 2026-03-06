@@ -1,18 +1,17 @@
 export function Statistics() {
   const stats = [
-    { value: '8X', label: 'more productive than human agents', color: '#00533d' },
-    { value: '162%', label: 'increase in CSAT scores', color: '#febcfa' },
-    { value: '357%', label: 'ROI on AI investment', color: '#aaccf9' },
-    { value: '84%', label: 'automated resolution rate', color: '#fde789' },
+    { value: '40%', label: 'reduction in operational costs with AI', color: '#00533d' },
+    { value: '83%', label: 'of customers expect immediate AI-powered responses', color: '#febcfa' },
+    { value: '35%', label: 'cost reduction in customer service operations', color: '#aaccf9' },
+    { value: '30%', label: 'average productivity gain reported by AI-adopting businesses', color: '#fde789' },
   ];
 
   return (
     <section className="py-6 md:py-16 px-4 md:px-[117px]">
       <div className="max-w-[1280px] mx-auto md:px-6">
         <div className="text-center mb-10 md:mb-16">
-          <h2 className="font-semibold text-[30px] md:text-[60px] text-black text-center leading-[40px] md:leading-[75px] tracking-[0.225px] md:tracking-normal">
-            <span className="block md:inline">Elevate your CX with AI agents</span>
-            <span className="block md:inline"> proven to outperform humans</span>
+          <h2 className="font-semibold text-[30px] md:text-[50px] text-black text-center leading-[40px] md:leading-[65px] tracking-[0.225px] md:tracking-normal">
+            <span className="block md:inline">What businesses achieve with AI agents</span>
           </h2>
         </div>
 
@@ -26,7 +25,7 @@ export function Statistics() {
                 <div className="font-normal text-[40px] text-black leading-[48px]">
                   {stat.value}
                 </div>
-                <div className="font-medium text-[16px] text-[#364153] leading-[26px]">
+                <div className="font-medium text-[13px] text-[#364153] leading-[20px]">
                   {stat.label}
                 </div>
               </div>
@@ -37,6 +36,7 @@ export function Statistics() {
             </div>
           ))}
         </div>
+        <p className="text-xs text-center mt-4 opacity-60" style={{fontSize: '11px'}}>Sources: McKinsey Global Institute AI Adoption Report 2024 · Salesforce State of Service Report 2025</p>
       </div>
     </section>
   );

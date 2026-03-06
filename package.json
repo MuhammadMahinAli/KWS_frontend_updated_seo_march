@@ -53,6 +53,7 @@
     "@types/react": "^19.2.9",
     "@vitejs/plugin-react-swc": "^3.10.2",
     "puppeteer": "^24.38.0",
+    "sharp": "^0.33.5",
     "vite": "6.3.5"
   },
   "scripts": {
@@ -60,8 +61,9 @@
     "build": "vite build",
     "postbuild": "npm run generate:sitemap",
     "generate:sitemap": "node scripts/generate-sitemap.js",
+    "convert:webp": "node scripts/convert-to-webp.js",
     "prerender": "node scripts/prerender.js",
     "preview": "vite preview",
-    "build:prod": "npm run build && npm run prerender"
+    "build:prod": "npm run convert:webp && npm run build && npm run prerender"
   }
 }

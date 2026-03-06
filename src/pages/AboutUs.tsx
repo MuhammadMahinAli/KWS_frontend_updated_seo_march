@@ -73,7 +73,7 @@ export function AboutUs() {
         <section className="flex flex-col gap-6 items-center max-w-[896px] px-6 py-0 w-full">
           <div className="flex flex-col items-center w-full">
             <h1 className="font-['Inter'] font-semibold text-black text-[36px] md:text-[48px] text-center tracking-[-0.9px] md:tracking-[-1.2px] leading-[39.6px] md:leading-[48px]">
-              About KWS
+              About KWS Technology
             </h1>
           </div>
 
@@ -106,7 +106,7 @@ export function AboutUs() {
 
             <div className="flex flex-col gap-6 items-start w-full">
               <p className="font-['Inter'] font-normal text-[#6b7280] text-[16px] leading-[26px] w-full">
-                KWS started with a simple observation: businesses were drowning in repetitive tasks while AI tools were becoming powerful enough to handle them. Yet, there was a gap between "cool tech demos" and reliable, production-ready systems.
+                KWS Technology started with a simple observation: businesses were drowning in repetitive tasks while AI tools were becoming powerful enough to handle them. Yet, there was a gap between "cool tech demos" and reliable, production-ready systems.
               </p>
 
               <p className="font-['Inter'] font-normal text-[#6b7280] text-[16px] leading-[26px] w-full">

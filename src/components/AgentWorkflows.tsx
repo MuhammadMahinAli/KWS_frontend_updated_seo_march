@@ -74,8 +74,8 @@ export function AgentWorkflows() {
     <section className="py-8 md:py-16 px-6 md:px-[117px]">
       <div className="max-w-[1280px] mx-auto md:px-6">
         <h2 className="font-semibold text-[30px] md:text-[36px] text-[#121212] tracking-[-0.75px] md:tracking-[-0.9px] leading-[36px] md:leading-[40px] mb-12 md:mb-16">
-          <span className="block md:inline">AI agents for every</span>
-          <span className="block md:inline"> workflow.</span>
+          <span className="block md:inline">AI Agent Development for</span>
+          <span className="block md:inline"> Any Business Workflow</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
