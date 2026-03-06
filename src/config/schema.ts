@@ -3,7 +3,7 @@
  * Generates schema.org structured data per route
  */
 
-const SITE_URL = import.meta.env.VITE_SITE_URL || 'https://kws.technology';
+const SITE_URL = import.meta.env.VITE_SITE_URL || 'https://www.kws.technology';
 
 // Organization schema - used site-wide
 export const organizationSchema = {
@@ -12,8 +12,13 @@ export const organizationSchema = {
   name: 'KWS Technology',
   url: SITE_URL,
   logo: `${SITE_URL}/logo.png`,
-  description: 'We build production-ready AI agents, automations, and web apps—lead gen, booking, CRM workflows, support, and more.',
-  sameAs: [],
+  description: 'AI agent development and automation agency',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Kuala Lumpur',
+    addressCountry: 'MY',
+  },
+  sameAs: ['https://www.linkedin.com/company/kws-technology'],
   contactPoint: [
     {
       '@type': 'ContactPoint',
@@ -72,27 +77,56 @@ const productsData = [
   },
 ];
 
-// Portfolio projects data
+// Portfolio projects data — kept in sync with src/pages/Portfolio.tsx
 const portfolioProjects = [
   {
     name: 'KWS Smart Appointment System',
-    description: 'Multi-tenant clinic management platform with AI booking agent support',
+    description:
+      'Multi-tenant clinic management platform with AI booking agent support, quantum-inspired scheduling optimization, and a self-improvement system.',
     category: 'AI Agent',
+    keywords: ['AI Agent', 'Clinic Management', 'Multi-tenant'],
   },
   {
     name: 'ResearchBuddy',
-    description: 'Platform for researchers to manage projects and generate AI-assisted reports',
+    description:
+      'Platform for researchers and innovators to manage projects, meetings, and to-dos, collaborate with teams, and generate AI-assisted reports.',
     category: 'Research Platform',
+    keywords: ['Research', 'Project Management', 'AI Reports'],
   },
   {
     name: 'NFT ClosetX',
-    description: 'Fashion NFT marketplace connecting digital fashion with physical products',
+    description:
+      'Fashion NFT marketplace that connects digital fashion with physical products, enabling minting, buying/selling, and AR/VR-ready experiences.',
     category: 'Web3',
+    keywords: ['Web3', 'Fashion', 'AR/VR'],
   },
   {
     name: 'DataM',
-    description: 'AI business mentor for founders with structured insights and planning support',
+    description:
+      'AI business mentor designed to guide founders with structured insights, planning support, and decision assistance.',
     category: 'AI Mentor',
+    keywords: ['AI Mentor', 'Business', 'Strategy'],
+  },
+  {
+    name: 'SHY',
+    description:
+      'AI agent concept for youth sexual wellness help, created for supportive guidance, education, and safe conversations.',
+    category: 'AI Agent',
+    keywords: ['AI Agent', 'Wellness', 'Support'],
+  },
+  {
+    name: 'Pinata Themes',
+    description:
+      'Website theme platform with multiple design themes and templates for fast launches.',
+    category: 'Web Design',
+    keywords: ['Themes', 'Templates', 'Web Design'],
+  },
+  {
+    name: 'Pongoo',
+    description:
+      'Wheelchair controller app concept with AI-driven assistance and accessible UX patterns.',
+    category: 'Mobile App',
+    keywords: ['Mobile App', 'Accessibility', 'AI Assist'],
   },
 ];
 
@@ -202,10 +236,26 @@ export function getSchemaForRoute(path: string): object[] {
                 name: project.name,
                 description: project.description,
                 genre: project.category,
+                keywords: project.keywords.join(', '),
               },
             })),
           },
         },
+        // Individual CreativeWork schema per project for richer indexing
+        ...portfolioProjects.map((project) => ({
+          '@context': 'https://schema.org',
+          '@type': 'CreativeWork',
+          name: project.name,
+          description: project.description,
+          genre: project.category,
+          keywords: project.keywords.join(', '),
+          creator: {
+            '@type': 'Organization',
+            name: 'KWS Technology',
+            url: SITE_URL,
+          },
+          url: `${SITE_URL}/portfolio`,
+        })),
       ];
 
     case '/industries':

@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import { Send, Calendar, MapPin, MessageCircle, Briefcase, FileText, ExternalLink, CheckCircle2, AlertCircle } from 'lucide-react';
 import { FAQ } from '../components/FAQ';
@@ -62,6 +63,16 @@ export function Contact() {
 
   return (
     <div className="relative bg-stone-50 min-h-screen">
+      <Helmet>
+        <title>Contact KWS Technology | Book a Strategy Call</title>
+        <meta name="description" content="Ready to automate your business? Contact KWS Technology to book a free strategy call or ask about a custom AI development project." />
+        <meta property="og:title" content="Contact KWS Technology | Book a Strategy Call" />
+        <meta property="og:description" content="Ready to automate your business? Contact KWS Technology to book a free strategy call or ask about a custom AI development project." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.kws.technology/contact" />
+        <meta property="og:image" content="/og-default.png" />
+        <link rel="canonical" href="https://www.kws.technology/contact" />
+      </Helmet>
       <main className="relative">
         {/* Hero Section */}
         <section className="pt-[128px] pb-12 md:pb-16 px-4 sm:px-6">

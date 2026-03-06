@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { Search, ChevronDown } from 'lucide-react';
 import svgPaths from '../imports/svg-uqvxn8cki9';
 import { ResponsiveImage } from '../components/ResponsiveImage';
@@ -33,6 +34,16 @@ export function Products() {
     <div className="relative bg-[#f7f5ef] min-h-screen" style={{
       backgroundImage: "linear-gradient(90deg, rgb(247, 245, 239) 0%, rgb(247, 245, 239) 100%), linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%)"
     }}>
+      <Helmet>
+        <title>AI Products &amp; Tools | KWS Technology</title>
+        <meta name="description" content="Explore KWS Technology's AI-powered products including booking agents, CRM automation, and smart workflow tools for modern businesses." />
+        <meta property="og:title" content="AI Products &amp; Tools | KWS Technology" />
+        <meta property="og:description" content="Explore KWS Technology's AI-powered products including booking agents, CRM automation, and smart workflow tools for modern businesses." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.kws.technology/products" />
+        <meta property="og:image" content="/og-default.png" />
+        <link rel="canonical" href="https://www.kws.technology/products" />
+      </Helmet>
       <main className="relative shrink-0 w-full">
         <div className="flex flex-col items-center size-full">
           <div className="flex flex-col gap-[40px] md:gap-[70px] items-center pb-[46px] pt-[120px] md:pt-[128px] px-4 md:px-6 relative w-full">

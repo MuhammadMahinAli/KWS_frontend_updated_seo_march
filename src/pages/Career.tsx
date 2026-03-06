@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useState, useMemo } from 'react';
 import { Search, ChevronDown, Rocket, BookOpen, Globe, Zap, Code, TrendingUp } from 'lucide-react';
 
@@ -329,6 +330,16 @@ export function Career() {
 
   return (
     <div className="relative bg-[#fafaf9] min-h-screen">
+      <Helmet>
+        <title>Join KWS Technology | Careers in AI</title>
+        <meta name="description" content="We're hiring talented builders for AI development, design, and growth roles. Explore open positions at KWS Technology." />
+        <meta property="og:title" content="Join KWS Technology | Careers in AI" />
+        <meta property="og:description" content="We're hiring talented builders for AI development, design, and growth roles. Explore open positions at KWS Technology." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.kws.technology/career" />
+        <meta property="og:image" content="/og-default.png" />
+        <link rel="canonical" href="https://www.kws.technology/career" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative px-6 md:px-20 pt-[120px] pb-16">
         <div className="max-w-[800px] mx-auto flex flex-col items-center text-center">

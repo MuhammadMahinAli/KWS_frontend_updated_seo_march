@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import svgPaths from '../imports/svg-y3f6axc5oo';
 import { CheckCircle2, Target, Shield, Zap } from 'lucide-react';
 
@@ -55,6 +56,16 @@ export function AboutUs() {
     <div className="relative bg-[#f7f5ef] min-h-screen" style={{
       backgroundImage: "linear-gradient(90deg, rgb(247, 245, 239) 0%, rgb(247, 245, 239) 100%), linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%)"
     }}>
+      <Helmet>
+        <title>About KWS Technology | AI-First Agency</title>
+        <meta name="description" content="KWS Technology is a Malaysia-based AI development studio building smart agents, automation systems, and full-stack products for growth-focused businesses." />
+        <meta property="og:title" content="About KWS Technology | AI-First Agency" />
+        <meta property="og:description" content="KWS Technology is a Malaysia-based AI development studio building smart agents, automation systems, and full-stack products for growth-focused businesses." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.kws.technology/about-us" />
+        <meta property="og:image" content="/og-default.png" />
+        <link rel="canonical" href="https://www.kws.technology/about-us" />
+      </Helmet>
       {/* Main Content */}
       <main className="flex flex-col gap-12 md:gap-[70px] items-center overflow-hidden pb-12 md:pb-[70px] pt-24 md:pt-[170px] px-0 relative w-full">
 

@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import svgPaths from '../imports/svg-8o0tb0ja3y';
 import imgKWSAppointment from '../assets/KWS_appointment.jpg';
 import imgResearchBuddy from '../assets/Res_bdy.jpg';
@@ -76,6 +77,16 @@ export function Portfolio() {
 
   return (
     <div className="relative bg-[#f7f5ef] min-h-screen">
+      <Helmet>
+        <title>Client Work &amp; Case Studies | KWS Technology</title>
+        <meta name="description" content="See how KWS Technology has helped businesses cut manual work and scale with AI agents, custom web apps, and automation workflows." />
+        <meta property="og:title" content="Client Work &amp; Case Studies | KWS Technology" />
+        <meta property="og:description" content="See how KWS Technology has helped businesses cut manual work and scale with AI agents, custom web apps, and automation workflows." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.kws.technology/portfolio" />
+        <meta property="og:image" content="/og-default.png" />
+        <link rel="canonical" href="https://www.kws.technology/portfolio" />
+      </Helmet>
       {/* Hero Section */}
       <section className="flex flex-col gap-6 items-center pt-24 md:pt-[193px] pb-12 md:pb-20 px-6">
         <div className="flex flex-col gap-6 max-w-[768px] w-full items-center">

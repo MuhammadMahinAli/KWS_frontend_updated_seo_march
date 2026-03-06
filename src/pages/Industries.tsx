@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import svgPaths from '../imports/svg-wjfw2vgkw1';
 
 export function Industries() {
@@ -255,6 +256,16 @@ export function Industries() {
 
   return (
     <div className="relative bg-[#f7f5ef] min-h-screen pt-20">
+      <Helmet>
+        <title>Industries We Serve | KWS Technology</title>
+        <meta name="description" content="KWS Technology builds AI systems for clinics, med-spas, gyms, property managers, and hospitals. Explore industry-specific automation solutions." />
+        <meta property="og:title" content="Industries We Serve | KWS Technology" />
+        <meta property="og:description" content="KWS Technology builds AI systems for clinics, med-spas, gyms, property managers, and hospitals. Explore industry-specific automation solutions." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.kws.technology/industries" />
+        <meta property="og:image" content="/og-default.png" />
+        <link rel="canonical" href="https://www.kws.technology/industries" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative px-6 md:px-24">
         <div className="max-w-[896px] mx-auto pt-[53px] md:pt-[113px] flex flex-col gap-6 items-center px-6">

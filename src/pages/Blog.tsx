@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { Search, ArrowRight } from 'lucide-react';
 import svgPaths from '../imports/svg-9am6eih62h';
 import imgFeatured from 'figma:asset/7d26933f3cef89122b3593b33f74c513983f4d4e.png';
@@ -96,6 +97,16 @@ export function Blog() {
 
   return (
     <div className="relative bg-[#f7f5ef] min-h-screen">
+      <Helmet>
+        <title>AI &amp; Automation Insights | KWS Technology Blog</title>
+        <meta name="description" content="Practical guides and insights on AI agents, workflow automation, and business growth from the KWS Technology team." />
+        <meta property="og:title" content="AI &amp; Automation Insights | KWS Technology Blog" />
+        <meta property="og:description" content="Practical guides and insights on AI agents, workflow automation, and business growth from the KWS Technology team." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.kws.technology/blog" />
+        <meta property="og:image" content="/og-default.png" />
+        <link rel="canonical" href="https://www.kws.technology/blog" />
+      </Helmet>
       {/* Header Section */}
       <div className="w-full max-w-[896px] mx-auto px-6 py-[60px]">
         <div className="flex flex-col gap-4 items-center w-full">
